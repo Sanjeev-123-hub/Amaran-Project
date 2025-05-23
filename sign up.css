@@ -1,0 +1,135 @@
+/* Universal */
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+/* Header Section */
+header{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0px; 
+    width: 100%;
+    z-index: 1000;
+
+}
+/* Title Header */
+.header{
+    display: flex;
+    padding: 15px;
+}
+.title-div{
+    display: flex;
+}
+/* Title Img */
+.title-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 300px;
+    padding-bottom: 5px;
+}
+/* Og Title */
+.title{
+    font-size: 50px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+}
+/* Searchbar */
+.searchbar{
+    width: 500px;
+    height: 40px;
+    margin: 10px 10px 10px 100px;
+    border-radius: 300px;    
+}
+/* Searchbar Button */
+.button{
+    width: 50px;
+    height: 45px;
+    position: relative;
+    right: 15px;
+    border-radius: 300px;
+}
+/* Search Button Hover  */
+.button:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 300px;
+}
+/* Login Sign up */
+.login-signup{
+    display: flex;
+    gap: 30px;
+    width: 350px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+/* Cart */
+.basket-img{
+    width: 50px;
+    height: 50px;
+}
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0%;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+}
+/* Sign up & Login Hover */
+.sign-up:hover,.login:hover,.cart:hover,.seller:hover{
+    background-color: grey;
+    border-radius: 300px; 
+    cursor: pointer;
+    border-width: 2px;
+    border-color: rgb(219, 152, 152); 
+    border-style: solid;
+}
+.home{
+    text-decoration: none;
+    color: white;
+}
+.sign-up-page{
+     display: flex;
+     flex-wrap: wrap;
+     width: 400px;
+     height: 500px;
+     font-size: 20px;
+     position: absolute;
+     left: 500px;
+     top: 200px;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid black;
+     box-shadow: 2px 2px rgb(145, 143, 143);
+     background-color: rgb(235, 228, 234);
+     border-radius: 20px;
+}
+.create-account{
+     text-align: center;
+}
+.OTP-button{
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+    margin: 20px 0 0 50px;
+    box-shadow: 2px 2px black;
+    color: white;
+    background-color: rgb(19, 30, 187);
+    border-radius: 5px;
+}
+.OTP-button:hover{
+    cursor: pointer;
+}
+.sign-up-para{
+    text-align: center;
+}
+input{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px; 
+}

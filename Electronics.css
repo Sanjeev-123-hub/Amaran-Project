@@ -1,0 +1,134 @@
+/* Universal */
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+/* Body */
+body{
+    background-color: rgb(193, 235, 218);
+}
+/* Header Section */
+header{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0px; 
+    width: 100%;
+    z-index: 1000;
+
+}
+/* Title Header */
+.header{
+    display: flex;
+    padding: 15px;
+}
+.title-div{
+    display: flex;
+}
+/* Title Img */
+.title-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 300px;
+    padding-bottom: 5px;
+}
+/* Og Title */
+.title{
+    font-size: 50px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+}
+.title-link{
+    text-decoration: none;
+    color: white;
+}
+/* Searchbar */
+.searchbar{
+    width: 500px;
+    height: 40px;
+    margin: 10px 10px 10px 60px;
+    border-radius: 300px;
+    font-size: 20px ;    
+}
+/* Searchbar Button */
+.button{
+    width: 50px;
+    height: 45px;
+    position: relative;
+    right: 15px;
+    border-radius: 300px;
+}
+/* Search Button Hover  */
+.button:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 300px;
+}
+/* Login Sign up */
+.login-signup{
+    display: flex;
+    gap: 10px;
+    width: 390px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.basket-img{
+    width: 50px;
+    height: 50px;
+}
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0%;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+/* Sign up & Login Hover */
+.sign-up:hover,.login:hover,.cart:hover,.seller:hover,.seller:hover{
+    background-color: grey;
+    border-radius: 300px; 
+    cursor: pointer;
+    border-width: 2px;
+    border-color: rgb(219, 152, 152); 
+    border-style: solid;
+}
+.sign-up-link{
+    text-decoration: none;
+    color: white;
+}
+/* Navbar */
+.navbar{
+    background-color: rgb(82, 76, 76);
+    height: 50px;
+}
+/* Navbar Content Lists */
+.content-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 12px 0 0 0;
+}
+/* Content List One Links */
+.content-list-one{
+    padding:9px; 
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 400px;
+    text-decoration: none;
+    color: white;
+    
+}
+/* Links Hover */
+.content-list-one:hover{
+    cursor: pointer;
+     background-color: blanchedalmond; 
+     color: black; 
+     border-color: black;
+    border-width: 2px;
+    border-style: solid; 
+}
