@@ -1,0 +1,630 @@
+
+/* Universal */
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body{
+    background-color: rgb(193, 235, 218);
+}
+
+
+/* Header Section */
+
+header{
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px; 
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 12px white;
+}
+
+/* Title Header */
+.header{
+    display: flex;
+    padding: 15px;
+}
+
+.title-div{
+    display: flex;
+}
+
+/* Title Img */
+.title-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 300px;
+    padding-bottom: 5px;
+}
+
+/* Og Title */
+.title{
+    font-size: 50px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+}
+
+.title-link{
+    text-decoration: none;
+    color: white;
+}
+
+/* Searchbar */
+.searchbar-div{
+    display: flex;
+    align-items: center;
+}
+
+.searchbar{
+    width: 500px;
+    height: 40px;
+    margin: 10px 10px 10px 60px;
+    border-radius: 300px 0 0 300px ;
+    font-size: 20px ;  
+    border: none;  
+}
+
+.searchbar:focus{
+    outline: none;
+}
+
+/* Searchbar Button */
+.button{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    right: 15px;
+    border-radius: 0 300px 300px 0;
+    border: none;
+    background-color: rgb(82, 129, 98);
+}
+
+/* Search Button Hover  */
+.button:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+/* Login Sign up */
+.login-signup{
+    display: flex;
+    gap: 10px;
+    width: 390px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .fa-cart-shopping{ */
+    /* width: 50px; */
+    /* height: 50px; */
+
+
+
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0%;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+/* Sign up & Login Hover */
+.sign-up:hover, .login:hover, .cart:hover, .seller:hover{
+    background-color: grey;
+    border-radius: 300px;
+    border: 2px solid rgb(250, 248, 248); 
+    cursor: pointer;
+    /* border-bottom: 2px solid white; */
+}
+
+.sign-up-link{
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar */
+.navbar{
+    background-color: rgb(82, 76, 76);
+    height: 50px;
+}
+
+/* Navbar Content Lists */
+.content-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 12px 0 0 0;
+}
+
+/* Content List One Links */
+.content-list-one{
+    padding:9px; 
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 400px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* Links Hover */
+.content-list-one:hover{
+    cursor: pointer;
+    background-color: blanchedalmond; 
+    color: black; 
+    border-color: black;
+    border-width: 2px;
+    border-style: solid; 
+}
+
+/* Banner Img */
+.moving-img{
+    overflow: hidden;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.basket{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    animation: shopping-img 10s linear infinite alternate;
+}
+
+@keyframes shopping-img {
+    0%{
+        left: 0%;
+    }
+    10%{
+        left: 10%;
+    }
+    20%{
+        left: 20%;
+    }
+    30%{
+        left: 30%;
+    }
+    40%{
+        left: 40%;
+    }
+    50%{
+        left: 50%;
+    }
+    60%{
+        left: 60%;
+    }
+    70%{
+        left: 70%;
+    }
+    80%{
+        left: 80%;
+    }
+    90%{
+        left: 90%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+/* Moving Slogan */
+.moving-slogan{
+    animation: moving-slogan 10s linear infinite alternate;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    background-color: rgb(242, 80, 248);
+    border-radius: 200px;
+    /* margin: 10px; */
+    border: 5px dotted white;
+    color: white;
+}
+
+@keyframes moving-slogan {
+    0%{
+        left: -10%;
+    }
+    0%{
+        left: 0%;
+        background-color: blue;
+    }
+    10%{
+        left: 10%;
+        background-color: rgb(31, 255, 43);
+    }
+    20%{
+        left: 20%;
+        background-color: rgb(255, 0, 0);
+    }
+    30%{
+        left: 30%;
+        background-color: rgb(226, 5, 255);
+    }
+    40%{
+        left: 40%;
+        background-color: rgb(0, 255, 234);
+    }
+    50%{
+        left: 50%;
+        background-color: rgb(10, 78, 50);
+    }
+    60%{
+        left: 60%;
+        background-color: rgb(56, 14, 153);
+    }
+    70%{
+        left: 70%;
+        background-color: rgb(14, 89, 228);
+    }
+    80%{
+        left: 80%;
+        background-color: rgb(235, 252, 6);
+    }
+    90%{
+        left: 90%;
+        background-color: rgb(252, 0, 105);
+    }
+    100%{
+        left: 100%;
+        background-color: rgb(0, 255, 200);
+    }
+}
+
+/* Offer Slogan */
+.offer-slogan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 900px;
+    bottom: 700px;
+    color: white;
+    height: 0px;
+}
+
+.offer-slogan-one{
+    margin: 40px 0 0 0;
+    animation: amaran-animation 5s linear infinite;
+}
+
+.offer-slogan-two{
+    background-color: rgb(83, 19, 143);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.banner-img{
+    width: 200px;
+    height: auto;
+    border-radius: 300px;
+    border: 10px dotted white;
+    animation: banner-img-animation 8s linear infinite alternate-reverse;
+}
+
+@keyframes banner-img-animation {
+    0%{
+        width: 150px;
+        border: 10px dotted rgb(9, 5, 245);
+    }
+    25%{
+        width: 170px;
+        border: 10px dotted rgb(2, 255, 44);
+    }
+    50%{
+        width: 190px;
+        border: 10px dotted rgb(255, 6, 6);
+    }
+    75%{
+        width: 210px;
+        border: 10px dotted rgb(213, 2, 255);
+    }
+    85%{
+        width: 230px;
+        border: 10px dotted rgb(217, 255, 2);
+    }
+    100%{
+        width: 250px;
+        border: 10px dotted rgb(255, 82, 2);
+    }
+}
+
+.amaran{
+    font-size: 100px;
+    font-style: italic;
+    animation: amaran-animation 5s linear infinite;
+}
+
+@keyframes amaran-animation{
+    0%{
+       color: white;
+    }
+    25%{
+        color: rgb(217, 5, 245);
+    }
+    50%{
+        color: rgb(6, 255, 18);
+    }
+    75%{
+        color: rgb(250, 5, 25);
+    }
+    100%{
+        color: rgb(253, 249, 3);
+    }
+}
+
+.facility{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-width: 2px;
+    border-color: rgb(85, 85, 100);
+    border-style: solid;
+    border-radius: 3px;
+    width: 90%;
+    margin: 7px 0 0 60px;
+    color:  white;
+    background-color: rgb(82, 76, 76);
+}
+
+/* Slide Show */
+.container{
+    min-width: 80px;
+    width: 6800px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.slider{
+    width: 100%;
+}
+
+.slide-show-img{
+    width: 1350px;
+    margin: 10px 0 0 0;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    animation: slide-show-animation 30s ease infinite 2.5s;
+}
+
+@keyframes slide-show-animation {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-1350px);
+    }
+    20%{
+        transform: translateX(-1350px);
+    }
+    30%{
+        transform: translateX(-2700px);
+    }
+    40%{
+        transform: translateX(-2700px);
+    }
+    50%{
+        transform: translateX(-4050px);
+    }
+    60%{
+        transform: translateX(-4050px);
+    }
+    70%{
+        transform: translateX(-5400px);
+    }
+    80%{
+        transform: translateX(-5400px);
+    }
+    90%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* Offer Slogan */
+.offer-closes-soon{
+    position: relative;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 300px;
+    border: 5px dotted white;
+    width: fit-content;
+    margin: 10px 0 0 0;
+    animation: offer-slogan-animation 8s linear infinite alternate;
+}
+
+@keyframes offer-slogan-animation {
+    0%{
+        left: -10%;
+    }
+    0%{
+        left: 0%;
+        background-color: blue;
+    }
+    10%{
+        left: 10%;
+        background-color: rgb(31, 255, 43);
+    }
+    20%{
+        left: 20%;
+        background-color: rgb(255, 0, 0);
+    }
+    30%{
+        left: 30%;
+        background-color: rgb(226, 5, 255);
+    }
+    40%{
+        left: 40%;
+        background-color: rgb(0, 255, 234);
+    }
+    50%{
+        left: 50%;
+        background-color: rgb(10, 78, 50);
+    }
+    60%{
+        left: 60%;
+        background-color: rgb(56, 14, 153);
+    }
+    70%{
+        left: 70%;
+        background-color: rgb(14, 89, 228);
+    }
+    80%{
+        left: 80%;
+        background-color: rgb(235, 252, 6);
+    }
+    90%{
+        left: 90%;
+        background-color: rgb(252, 0, 105);
+    }
+    100%{
+        left: 100%;
+        background-color: rgb(0, 255, 200);
+    }
+}
+
+/* Back To Top */
+.back-to-top{
+    background-color: rgb(59, 58, 58);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0 0 0 ;
+}
+
+/* Footer Section */
+
+/* Og Footer */
+footer{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    margin: 10px 0 0 0;
+    padding: 10px 
+}
+
+.footer-one{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    margin: 10px 0 0 0;
+    display: flex;
+    padding: 10px 
+}
+
+/* Contact Details */
+.contact-detail{
+    padding: 0 0 0 20px;
+}
+
+.contact-us{
+    padding: 10px;
+    color: rgb(190, 188, 188);
+}
+
+/* About Us Details */
+.about-detail{
+    padding: 0 0 0 20px;
+}
+
+.about-us{
+    padding: 10px;
+    color: rgb(190, 188, 188);
+}
+
+/* Partners Details */
+.partners-detail{
+    padding: 0 0 0 20px;
+}
+
+.service-partners{
+    padding: 10px;
+    color: rgb(190, 188, 188);
+}
+
+/* Other Bussiness Details */
+.other-bussiness-detail{
+    padding: 0 0 0 20px;
+}
+
+.other-bussiness{
+    padding: 10px;
+    color: rgb(190, 188, 188);
+}
+
+/* Service Details */
+.service-detail{
+    padding: 0 0 0 20px;
+}
+
+.service{
+    padding: 10px;
+    color: rgb(190, 188, 188);
+}
+
+/* Social Media Details */
+.social-media-detail{
+    padding: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.social-media{
+    padding: 10px;
+    color: rgb(190, 188, 188);
+}
+
+.footer-heading-div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer-img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+}
+
+.footer-heading{
+    display: inline-block;
+    font-size: 60px;
+    color: white;
+}
+
+.quick-links{
+    display: flex;
+}
+
+.Quick-to-go{
+    padding: 20px;
+}
+
+.quick-link-one{
+    padding: 20px;
+    color: rgb(190, 188, 188);
+    cursor: pointer;
+}
